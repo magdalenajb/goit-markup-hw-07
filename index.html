@@ -16,7 +16,7 @@
         <div class="container header__container">
         <nav class="menu">
             <a class="logo" href="./index.html">
-            <span class="logo--blue-theme">Web</span><span class="logo--dark-theme">Studio</span></a>
+            <span class="logo__part">Web</span><span class="logo--dark-theme">Studio</span></a>
             <ul class="navigation">
                 <li><a class="navigation__link navigation__link--primary" href="./index.html">Agencja</a></li>
                 <li><a class="navigation__link" href="./portfolio.html">Portfolio</a></li>
@@ -292,50 +292,50 @@
     </section>
     </main>
 
-    <footer class="tcity-nav theme12">
-    <div class="container theme-container">
+    <footer class="footer">
+    <div class="container footer__container">
         <div>
-        <a class="logo-12" href="./index.html">
-            <span class="logo--blue-theme">Web</span><span class="studio-2">Studio</span></a>
+        <a class="logo logo--sequent" href="./index.html">
+            <span class="logo__part">Web</span><span class="logo--bright-theme">Studio</span></a>
         
         <address>
-        <p class="navigation-2 city">m. Warszawa, Aleje Jerozolimskie 21</p>
-        <ul class="list"><div class="navigation-city-1">
-            <li><a class="navigation-2 city-1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="navigation-2 city-1" href="tel:+48111111111">+48 111 111 111</a></li></div>
+        <p class="address">m. Warszawa, Aleje Jerozolimskie 21</p>
+        <ul><div class="address__list" >
+            <li><a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="address__link" href="tel:+48111111111">+48 111 111 111</a></li></div>
         </ul>
         </address></div>
         <div>
             <h3 class="join">Dołącz do nas</h3>
-            <ul class="list join-icon ">
+            <ul class="join-us ">
                 <li>
-                    <a class="join-us-icon"> <svg widith="20" height="20">
+                    <a class="join-us__icon"> <svg widith="20" height="20">
                     <use href="./images/icons.svg#icon-instagram2"></use>
                     </svg></a>
                 </li>
                 <li>
-                  <a class="join-us-icon"> <svg widith="20" height="20">
+                  <a class="join-us__icon"> <svg widith="20" height="20">
                         <use href="./images/icons.svg#icon-twitter1"></use>
                     </svg></a>  
                 </li>
                 <li>
-                    <a class="join-us-icon"> <svg widith="20" height="20">
+                    <a class="join-us__icon"> <svg widith="20" height="20">
                         <use href="./images/icons.svg#icon-facebook1"></use>
                     </svg></a>
                 </li>
                 <li>
-                    <a class="join-us-icon"> <svg widith="20" height="20">
+                    <a class="join-us__icon"> <svg widith="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin1"></use>
                     </svg></a>
                 </li>
             </ul>
         </div>
     
-    <form class="form-1">
-        <label class="newsletter" for="email">zapisz się do newslettera</label>
-        <div class="form-2"><input class="send-input" type="email" id="name" placeholder="E-mail"/>
-        <button class="newsletter-button" type="submit">Zapisz się
-            <svg class="send-icon-news" width="24" height="24">
+    <form class="newsletter">
+        <label class="newsletter__header" for="email">zapisz się do newslettera</label>
+        <div class="newsletter__box"><input class="newsletter__input" type="email" id="name" placeholder="E-mail"/>
+        <button class="newsletter__button" type="submit">Zapisz się
+            <svg class="newsletter__icon" width="24" height="24">
             <use href="./images/icons.svg#icon-send"></use>
         </svg></button></div>
     </form></div>
@@ -346,34 +346,34 @@
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>X</button>
             <form class="modal-form">
-               <h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
+               <h3 class="modal-form__title">Zostaw swoje dane w formularzu poniżej</h3>
                <fieldset class="fieldset">
-                <label class="label" for="user-name">Imie</label>
-                <svg class="modalicon" width="18" height="18"><use href="./images/icons.svg#icon-person-black"></use></svg>
-                <input class="input" type="text"id="user-name" name="user-name">
+                <label class="fieldset__label" for="user-name">Imie</label>
+                <svg class="fieldset__icon" width="18" height="18"><use href="./images/icons.svg#icon-person-black"></use></svg>
+                <input class="fieldset__input" type="text"id="user-name" name="user-name">
                </fieldset>
             <fieldset class="fieldset">
-                <label class="label" for="user-phone">Telefon</label>
-                <svg class="modalicon" width="18" height="18"><use href="./images/icons.svg#icon-phone-black"></use></svg>
-                <input class="input" type="tel" id="user-phone" name="user-phone">
+                <label class="fieldset__label" for="user-phone">Telefon</label>
+                <svg class="fieldset__icon" width="18" height="18"><use href="./images/icons.svg#icon-phone-black"></use></svg>
+                <input class="fieldset__input" type="tel" id="user-phone" name="user-phone">
             </fieldset>
             <fieldset class="fieldset">
-                <label class="label" for="user-mail">Email</label>
-                <svg class="modalicon" width="18" height="18"><use href="./images/icons.svg#icon-email-black"></use></svg>
-                <input class="input" type="email" id="user-mail" name="user-mail">
+                <label class="fieldset__label" for="user-mail">Email</label>
+                <svg class="fieldset__icon" width="18" height="18"><use href="./images/icons.svg#icon-email-black"></use></svg>
+                <input class="fieldset__input" type="email" id="user-mail" name="user-mail">
             </fieldset>
-            <fieldset class="fieldset-1">
-                <label class="label-1" for="comment">Komentarz</label>
-                <textarea class="comment" rows="7" id="comment" name="comment"  placeholder="Wprowadź tekst"></textarea>
+            <fieldset class="textarea">
+                <label class="textarea__label" for="comment">Komentarz</label>
+                <textarea class="textarea__comment" rows="7" id="comment" name="comment"  placeholder="Wprowadź tekst"></textarea>
             </fieldset>
-            <label for="checked-box" class="checked-label">
-                <input type="checkbox" class="checked-box" id="checked-box">
-                <div class="checked-border"></div>
-                <svg class="checked-icon" width="16" height="15"><use href="./images/icons.svg#icon-vector11"></use></svg>
-                Oświadczam, iż akceptuję <a class="policy-checked" href="#">Regulamin</a> i <a class="policy-checked" href="#">Politykę prywatności.</a>
+            <label for="checked-box" class="checked">
+                <input type="checkbox" class="checked__input" id="checked-box">
+                <div class="checked__border"></div>
+                <svg class="checked__icon" width="16" height="15"><use href="./images/icons.svg#icon-vector11"></use></svg>
+                Oświadczam, iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę prywatności.</a>
             </label>
             
-            <button type="submit" class="comment-button">Wyślij</button>
+            <button type="submit" class="modal-form__button">Wyślij</button>
             </form>
         </div>
     </div>
