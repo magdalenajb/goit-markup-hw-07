@@ -55,6 +55,7 @@ padding-bottom: 25px;
 text-decoration: none;
 display: block;
 }
+
 .logo--blue-theme{
 font-family: 'Raleway', sans-serif;
 font-size: 26px ;
@@ -74,11 +75,13 @@ letter-spacing: 0.03em;
 text-align: left;
 color:#000000;
 }
-.management{
+
+.header__container{
 display:flex;
 align-items: center;
 justify-content: space-between;
 }
+
 .menu{
 display:flex;
 align-items: center;
@@ -408,7 +411,26 @@ border-radius: 4px;
 fill: var(--brand-color);
 }
 
-.button-2{
+.management{
+margin-top:6px;
+padding-bottom:0px;
+margin-bottom:56px;
+}
+
+.management__title{
+display:none;
+}
+
+.management__list{
+display: flex;
+align-items: center;
+justify-content: space-between;
+justify-content: center; 
+gap: 8px;
+list-style-type: var(--style-list);
+}
+
+.management__button{
 background-color:#F5F4FA ;
 font-family: inherit;
 border: 1px solid #F5F4FA;
@@ -425,15 +447,7 @@ transition:background-color 250ms cubic-bezier(.4, 0, 0.2, 1),
 color 250ms cubic-bezier(.4, 0, 0.2, 1);
 }
 
-.button-list-2{
-display: flex;
-align-items: center;
-justify-content: space-between;
-justify-content: center; 
-gap: 8px;
-}
-
-.button-2:hover, .button-2:focus{
+.management__button:hover, .management__button:focus{
 background-color: var(--brand-color);
 color:var(--primary-color);
 box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
@@ -441,12 +455,37 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0
 border: 1px solid var(--brand-color);
 } 
 
-.button-menu-list{
-margin-top:6px;
-padding-bottom:0px;
-margin-bottom:56px;
+.portfolio{
+padding-top:0px;
 }
-.name-2{
+
+.portfolio__title{
+  display:none;
+}
+
+.portfolio__list{
+display: flex;
+align-items:center;
+justify-content: space-between;
+flex-wrap: wrap;
+flex-direction: row;
+gap: 30px;
+list-style-type: var(--style-list);
+}
+
+.card{
+flex-basis: calc((100%-60px)/3);
+}
+
+.card__part{
+border-bottom: 1px solid #EEEEEE;
+border-left: 1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;
+padding-left: 24px;
+padding-right:24px;
+}
+
+.card__title{
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
@@ -455,7 +494,7 @@ padding-top:20px;
 padding-bottom: 4px;
 }
 
-.position-2{
+.card__paragraph{
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
@@ -464,45 +503,23 @@ text-align: left;
 padding-bottom: 20px;
 }
 
-.portfolio-section{
-padding-top:0px;
-}
-.portfolio-list-1{
-display: flex;
-align-items:center;
-justify-content: space-between;
-flex-wrap: wrap;
-flex-direction: row;
-gap: 30px;
-}
-
-.picture-1{
-flex-basis: calc((100%-60px)/3);
-}
-.picture-1:hover{
+.card:hover{
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
   0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.picture-1-1{
-  display:block;
-}
-
-.portfolio-name-2{
-border-bottom: 1px solid #EEEEEE;
-border-left: 1px solid #EEEEEE;
-border-right: 1px solid #EEEEEE;
-padding-left: 24px;
-padding-right:24px;
-}
-.technocrack-box{
+.overlay{
   width: 370px;
   height:294px;
   position:relative;
   overflow: hidden;
 }
 
-.technocrack{
+.overlay__image{
+  display:block;
+}
+
+.overlay__description{
 position:absolute;
 width:100%;
 height:100%;
@@ -511,7 +528,7 @@ transform: translateY(100%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.technocrack-text{
+.overlay__text{
 font-weight: 400;
 font-size: 18px;
 line-height: 1.55;
@@ -520,8 +537,8 @@ color:var(--primary-color);
 padding:49px 45px 49px 24px;
 }
 
-.picture-1:hover .technocrack{
-  transform: translateY(-100%);
+.card:hover .overlay__description{
+transform: translateY(-100%);
 }
 
 .navigation-2{
@@ -554,8 +571,7 @@ display: flex;
 
 .theme12{
 background-color:#2F303A;
-padding-top:200px;
-padding-bottom: 200px;
+
 }
 
 .logo-12{
